@@ -1,0 +1,280 @@
+@import url("variable.css");
+@import url("common.css");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+.bg-primary {
+  background-image: url("../img/bg.png");
+  /*background-size: cover;*/
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.navbar-logo a {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-logo img {
+  margin-right: 10px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  position: relative;
+}
+
+#cart-badge {
+  background: #026c42;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.logo-center {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.logo-center a {
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-c {
+  margin-right: 10px;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.title h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.title p {
+  font-size: 28px;
+}
+/*==================== Category Button ====================*/
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.category {
+  background-color: #a7a6a6; 
+  color: #333;
+  border: 2px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.category.active {
+  background-color: #4a9c80 !important;
+  color: white;
+}
+
+
+
+/*==================== Category - Product==============*/
+
+.text h3 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 80px;
+  padding: 50px;
+}
+.text span {
+  color: var(--content-color);
+  font-weight: bold;
+}
+.card-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 80px;
+  margin: 50px;
+ padding-top: 50px;
+
+}
+.menu_card {
+  position: relative;
+  width: 300px;
+  background: rgb(211, 209, 209);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+
+
+}
+.menu_card:hover {
+  transform: scale(1.05);
+}
+.bg_card {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+ 
+  border-radius: 10px;
+}
+.card_image {
+  position: relative;
+  z-index: 1;
+}
+.card_image img {
+  width: 100%;          
+  height: 200px;        
+  object-fit: cover;    
+  border-radius: 10px;  
+  margin-top: -60px;  
+   
+}
+
+h4 {
+  margin: 10px 0;
+  font-size: 36px;
+  font-family: var(--poppins-font);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* e ben qe te shfaqen pikat ne fund te tekstit prej white-space deri tek displat block*/
+  width: 200px;
+  display: block;
+}
+.description {
+  color: #636161;
+  font-size: 24px;
+  font-family: var(--poppins-font);
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  width: 200px;
+  display: block;
+}
+
+.card_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+.add_to_cart {
+  background: var(--content-color);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 24px;
+  font-family: var(--poppins-font);
+}
+.add_to_cart:hover {
+  background: var(--primary-darker-color);
+}
+.fa-heart {
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+/*========================== Footer ==================================*/
+
+footer {
+  background-color: var(--primary-darker-color);
+  color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  bottom: 0;
+  margin-top: 180px;
+  width: 100%;
+  min-height: 200px;
+  font-size: 36px;
+}
+
+.social_icons {
+  font-size: 36px;
+}
+.social_icons i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.footer_links a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 36px;
+}
+.footer_links a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #4a9c80;
+  --white-color: #fff;
+  --gray-color: #929292;
+  --light-gray-color: #d4d4d4;
+  --primary-darker-color: #035846;
+  --content-color: #4a9c80;
+
+  --title: 63px;
+
+  --poppins-font: "Poppins", sans-serif;
+  --chelsea-font: "Chelsea Market", serif;
+}
